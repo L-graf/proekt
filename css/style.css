@@ -252,6 +252,60 @@ aside {
 	background: pink;
 }
 
+/* slider */
+.slider {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+	padding:
+}
+
+.slide img {
+    width: 1000px;
+    height: 500px;
+}
+.rule {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 1;
+}
+.slider:hover .rule {
+    display: block;
+}
+.rule span {
+    position: absolute;
+    top: calc(50% - 17px);
+    cursor: pointer; /* курсор показывает, что тут активный элемент */
+    user-select: none; /* запрещаем выделение текста - кнопка не "синеет", как по ней ни кликай*/
+    font-size: 30px;
+    width: 34px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+}
+.left {
+    left: 5%;
+}
+.right {
+    right: 5%;
+}
+/* main */
+main {
+	flex: 1 0 auto;
+	background: #fff;
+}
+
+
 /* order */
 .order {
 	width: 100%;
